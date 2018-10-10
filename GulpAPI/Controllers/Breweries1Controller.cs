@@ -17,7 +17,7 @@ namespace GulpAPI.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: api/Breweries1
-        public IQueryable<Brewery> GetBreweries()
+        public IDbSet<Brewery> GetBreweries()
         {
             return db.Breweries;
         }

@@ -10,8 +10,6 @@ namespace GulpAPI.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Address Address { get; set; }
-        public int Established { get; set; }
         public string Size { get; set; }
     }
 }

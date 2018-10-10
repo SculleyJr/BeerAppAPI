@@ -46,7 +46,7 @@ namespace GulpAPI.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Established,Size")] Brewery brewery)
+        public ActionResult Create([Bind(Include = "Id,Name,Size")] Brewery brewery)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace GulpAPI.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Established,Size")] Brewery brewery)
+        public ActionResult Edit([Bind(Include = "Id,Name,Size")] Brewery brewery)
         {
             if (ModelState.IsValid)
             {
